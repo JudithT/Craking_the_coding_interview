@@ -1,0 +1,9 @@
+def stacks&queue():
+    s = []
+    stack_length =  len(s)
+    stackone = stack_length *(1/3)
+    stacktwo = stack_length *(2/3)
+    stackthree = stack_length *(3/3)
+
+def main():
+  
