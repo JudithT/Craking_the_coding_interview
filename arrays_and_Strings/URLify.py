@@ -52,11 +52,7 @@ Hints
 """
 
 def URLify(s):
-    arr= list(s)
-    for index, char in enumerate(arr): 
-        if char == " ":
-            arr[index] = "%20"
-    return "".join(arr)
-
+    # strip will remove the trailing spaces
+    return s.strip().replace(" ", "%20")
 
 print(URLify("MR John Smith  "))
