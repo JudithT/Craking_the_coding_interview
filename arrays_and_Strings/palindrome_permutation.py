@@ -7,6 +7,29 @@ Given a string, write a function to check if it is a permutation of a palindrome
 
 """
 
+# November 25 2020
+def IsPalindromePermutation(s):
+    letter_count = {}
+    count = 0
+    s.replace(" ", "")
+    for chr in s: 
+        if chr in letter_count:
+            letter_count[chr] += 1
+        letter_count[chr] = 1
+    for val in letter_count.values():
+        if val % 2 != 0 :
+            count = 1
+    return count < 2
+    
+    
+print(IsPalindromePermutation("atco ctaa"))
+
+
+
+
+
+
+
 def is_palindrome_permutation(string):
   counter = Counter()
   for letter in string.replace(" ", ""):
